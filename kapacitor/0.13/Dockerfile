@@ -4,7 +4,7 @@ RUN gpg \
     --keyserver hkp://ha.pool.sks-keyservers.net \
     --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5
 
-ENV KAPACITOR_VERSION 0.13.1-mux~cf70c13
+ENV KAPACITOR_VERSION 0.13.1-mux~c2f9de4
 COPY kapacitor_${KAPACITOR_VERSION}_amd64.deb /
 RUN dpkg -i /kapacitor_${KAPACITOR_VERSION}_amd64.deb
 
